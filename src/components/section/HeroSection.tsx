@@ -12,10 +12,7 @@ const clients = [
 
 const HeroSection = () => {
   return (
-    <section
-      id="home"
-      className="flex min-h-screen items-center pt-[13rem] pb-[8rem] lg:pt-[12rem] lg:pb-[10rem] xl:pt-[15rem] xl:pb-[15rem]"
-    >
+    <section id="home" className="flex min-h-screen items-center">
       <div className="container px-[2rem]">
         <div className="flex flex-col items-center text-center">
           <AvailableBadge />
