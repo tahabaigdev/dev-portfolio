@@ -74,7 +74,7 @@ const ProjectSection = () => {
                     </a>
                   </Button>
 
-                  <a
+                  {/* <a
                     title={`${item.name} GitHub Repo.`}
                     href={item.githubUrl}
                     target="_blank"
@@ -85,7 +85,7 @@ const ProjectSection = () => {
                       alt="GitHub Icon"
                       className="h-[2.6rem] object-contain"
                     />
-                  </a>
+                  </a> */}
                 </div>
               </div>
 
