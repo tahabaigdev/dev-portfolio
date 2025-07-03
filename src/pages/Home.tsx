@@ -6,7 +6,7 @@ import TestimonialSection from "@/components/section/TestimonialSection";
 
 const Home = () => {
   return (
-    <main className="relative z-[10]">
+    <main>
       <HeroSection />
 
       <ProjectSection />

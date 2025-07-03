@@ -11,14 +11,24 @@ const clients = [
 ];
 
 const HeroSection = () => {
+  const HeadingText = "Hi, I’m Taha,\na frontend engineer";
+
   return (
-    <section id="home" className="flex min-h-screen items-center">
-      <div className="container px-[2rem]">
+    <section id="home" className="relative flex min-h-screen items-center">
+      <div className="noise"></div>
+      <div className="relative z-[10] container px-[2rem]">
         <div className="flex flex-col items-center text-center">
           <AvailableBadge />
 
-          <h1 className="mt-[1.5rem] text-[3rem] leading-[3.5rem] font-normal md:mt-[1rem] md:text-[7rem] md:leading-[8rem] lg:text-[9.6rem] lg:leading-[10.5rem] lg:tracking-[0.7px]">
-            Hi, I’m Taha, <br /> a frontend engineer
+          <h1 className="mt-[1.5rem] text-[3rem] leading-[3.5rem] font-normal whitespace-pre-wrap md:mt-[1rem] md:text-[7rem] md:leading-[8rem] lg:text-[9.6rem] lg:leading-[10.5rem] lg:tracking-[0.7px]">
+            {HeadingText.split("").map((char, idx) => (
+              <span
+                key={idx}
+                className="drop-shadow-[0px_4px_2px_rgba(0,0,0,0.2)]"
+              >
+                {char}
+              </span>
+            ))}
           </h1>
 
           <p className="mt-[2rem] mb-[3rem] text-[1.4rem] font-light opacity-85 md:mt-[3rem] md:mb-[4rem] md:text-[2.2rem] md:leading-[3.3rem] md:tracking-[-0.3px] lg:max-w-[85%]">

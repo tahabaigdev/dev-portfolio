@@ -17,8 +17,6 @@ const App = () => {
     <div>
       {isLoading && <Loader onComplete={handleLoaderComplete} />}
 
-      <div className="grained-bg"></div>
-
       {!isLoading && (
         <div>
           <Header />
