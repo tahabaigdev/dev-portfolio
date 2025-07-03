@@ -14,9 +14,8 @@ const HeroSection = () => {
   const HeadingText = "Hi, I’m Taha,\na frontend engineer";
 
   return (
-    <section id="home" className="relative flex min-h-screen items-center">
-      <div className="noise"></div>
-      <div className="relative z-[10] container px-[2rem]">
+    <section id="home" className="flex min-h-screen items-center">
+      <div className="container px-[2rem]">
         <div className="flex flex-col items-center text-center">
           <AvailableBadge />
 

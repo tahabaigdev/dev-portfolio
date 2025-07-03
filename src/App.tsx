@@ -15,6 +15,8 @@ const App = () => {
 
   return (
     <div>
+      <div className="noise"></div>
+
       {isLoading && <Loader onComplete={handleLoaderComplete} />}
 
       {!isLoading && (

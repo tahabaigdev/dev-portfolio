@@ -31,7 +31,6 @@ const Loader = ({ onComplete }: { onComplete: () => void }) => {
       ref={loaderRef}
       className="fixed inset-0 flex items-center justify-center bg-[#efeeea] px-[2rem]"
     >
-      <div className="noise"></div>
       <p
         ref={textRef}
         className="max-w-[60rem] text-left text-[2rem] leading-[3rem] font-medium md:text-[3rem] md:leading-[4rem]"

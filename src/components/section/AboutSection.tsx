@@ -35,9 +35,8 @@ const experience = [
 
 const AboutSection = () => {
   return (
-    <section id="about" className="relative py-[6rem]">
-      <div className="noise"></div>
-      <div className="relative z-[10] container flex flex-col items-center gap-[4.4rem] md:flex-row">
+    <section id="about" className="py-[6rem]">
+      <div className="container flex flex-col items-center gap-[4.4rem] md:flex-row">
         <div className="shadow-02 flex w-full flex-col gap-[2.4rem] rounded-[.8rem] bg-white px-[.9rem] pt-[.9rem] pb-[3rem] md:w-auto">
           <div className="flex flex-col items-center gap-[.8rem] text-center">
             <div className="shadow-03 h-[40rem] w-full overflow-hidden rounded-[.8rem] md:h-[28.2rem] md:w-[25.2rem]">

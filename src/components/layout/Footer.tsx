@@ -16,9 +16,8 @@ const Footer = () => {
   };
 
   return (
-    <footer className="relative border-t-[1px] border-dashed border-[#051a2f67]">
-      <div className="noise"></div>
-      <div className="relative z-[10] container grid grid-cols-1 gap-[1rem] p-[2rem] md:grid-cols-2">
+    <footer className="relative z-[10] border-t-[1px] border-dashed border-[#051a2f67]">
+      <div className="container grid grid-cols-1 gap-[1rem] p-[2rem] md:grid-cols-2">
         <p className="text-center text-[1.2rem] leading-[2rem] tracking-[0.7px] md:text-left md:text-[1.4rem] md:leading-[2.4rem]">
           © 2024, DESIGNED AND DEVELOPED BY TAHABAIG
         </p>
