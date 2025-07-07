@@ -1,3 +1,4 @@
+import InitialMaskReveal from "@/components/animations/InitialMaskReveal";
 import AboutSection from "@/components/section/AboutSection";
 import ContactSection from "@/components/section/ContactSection";
 import HeroSection from "@/components/section/HeroSection";
@@ -7,7 +8,9 @@ import TestimonialSection from "@/components/section/TestimonialSection";
 const Home = () => {
   return (
     <main className="relative z-[10]">
-      <HeroSection />
+      <InitialMaskReveal>
+        <HeroSection />
+      </InitialMaskReveal>
 
       <ProjectSection />
 

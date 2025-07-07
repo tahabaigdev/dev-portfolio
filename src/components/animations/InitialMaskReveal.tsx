@@ -11,7 +11,7 @@ interface InitialMaskRevealProps {
 const InitialMaskReveal: React.FC<InitialMaskRevealProps> = ({
   children,
   delay = 0.2,
-  duration = 2,
+  duration = 5,
 }) => {
   const wrapperRef = useRef<HTMLDivElement>(null);
 

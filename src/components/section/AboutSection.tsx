@@ -1,3 +1,4 @@
+import { useLenisScroll } from "@/hooks/useLenis";
 import { Button } from "../ui/button";
 
 const social = [
@@ -34,6 +35,20 @@ const experience = [
 ];
 
 const AboutSection = () => {
+  const lenisRef = useLenisScroll();
+
+  const handleNavClick = (e: React.MouseEvent, link: string) => {
+    e.preventDefault();
+
+    const target = document.querySelector(link) as HTMLElement | null;
+    if (target && lenisRef.current) {
+      lenisRef.current.scrollTo(target, { offset: -50 });
+
+      // ✅ Update URL without reloading
+      window.history.pushState(null, "", link);
+    }
+  };
+
   return (
     <section id="about" className="py-[6rem]">
       <div className="container flex flex-col items-center gap-[4.4rem] md:flex-row">
@@ -42,8 +57,9 @@ const AboutSection = () => {
             <div className="shadow-03 h-[40rem] w-full overflow-hidden rounded-[.8rem] md:h-[28.2rem] md:w-[25.2rem]">
               <img
                 src="/images/my-image.avif"
-                alt="Image"
+                alt="About Image"
                 className="size-full object-cover object-center"
+                loading="lazy"
               />
             </div>
 
@@ -82,9 +98,13 @@ const AboutSection = () => {
             </div>
 
             <div className="w-full">
-              <Button asChild className="w-full">
-                <a href="/resume/my-resume.pdf" target="_blank">
-                  Download Resume
+              <Button
+                onClick={(e) => handleNavClick(e, "#contact")}
+                asChild
+                className="w-full"
+              >
+                <a href="#contact" target="_blank">
+                  Let's Connect
                 </a>
               </Button>
             </div>

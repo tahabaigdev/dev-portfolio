@@ -20,11 +20,12 @@ const TestimonialSlider = () => {
       {testimonials.map((testimonial, index) => (
         <SwiperSlide key={index}>
           <div className="flex flex-col items-end gap-[4rem] px-[1rem] md:flex-row lg:gap-[8rem]">
-            <div className="relative h-[45rem] w-full overflow-hidden rounded-[.8rem] bg-amber-200 md:h-[47.4rem] md:w-[40rem]">
+            <div className="relative h-[45rem] w-full overflow-hidden rounded-[.8rem] md:h-[47.4rem] md:w-[40rem]">
               <img
                 src={testimonial.image}
-                alt="Testimonial"
+                alt="Testimonial Image"
                 className="size-full object-cover object-center"
+                loading="lazy"
               />
             </div>
 

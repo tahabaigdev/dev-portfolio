@@ -98,6 +98,7 @@ const ProjectSection = () => {
                   src={item.imageSrc}
                   alt={item.imageAlt}
                   className="size-full object-contain object-center"
+                  loading="lazy"
                 />
               </a>
             </div>
