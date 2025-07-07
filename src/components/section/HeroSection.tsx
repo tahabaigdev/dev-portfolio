@@ -55,6 +55,7 @@ const HeroSection = () => {
                       src={item.src}
                       alt={item.alt}
                       className="size-full object-cover object-center"
+                      loading="lazy"
                     />
                   </li>
                 ))}

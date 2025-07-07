@@ -7,21 +7,25 @@ export const useLenisScroll = () => {
   const lenisRef = useRef<Lenis | null>(null);
 
   useEffect(() => {
-    const options: LenisOptions = {
-      smooth: true,
-    };
+    if ("requestIdleCallback" in window) {
+      requestIdleCallback(() => {
+        const options: LenisOptions = {
+          smooth: true,
+        };
 
-    const lenis = new Lenis(options);
-    lenisRef.current = lenis;
+        const lenis = new Lenis(options);
+        lenisRef.current = lenis;
 
-    const raf = (time: number) => {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    };
-    requestAnimationFrame(raf);
+        const raf = (time: number) => {
+          lenis.raf(time);
+          requestAnimationFrame(raf);
+        };
+        requestAnimationFrame(raf);
+      });
+    }
 
     return () => {
-      lenis.destroy();
+      lenisRef.current?.destroy();
     };
   }, []);
 
