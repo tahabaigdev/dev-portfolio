@@ -39,7 +39,7 @@ const App = () => {
         <meta property="og:url" content="https://www.tahabaig.dev/" />
       </Helmet>
 
-      <div className="noise"></div>
+      {/* <div className="noise"></div> */}
 
       {isLoading && <Loader onComplete={handleLoaderComplete} />}
 
