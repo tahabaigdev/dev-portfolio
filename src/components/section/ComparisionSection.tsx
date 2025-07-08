@@ -8,7 +8,7 @@ import InfiniteMarquee from "../ui/InfiniteMarquee";
 import { useLenisScroll } from "@/hooks/useLenis";
 
 const features = [
-  "Custom, high-performance websites",
+  "Custom, high-performance web solutions",
   "Pixel-perfect UI/UX design",
   "Problem Solver",
   "Seamless animations & interactions",
