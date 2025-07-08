@@ -5,6 +5,7 @@ import SectionTitle from "../ui/SectionTitle";
 import { Button } from "../ui/button";
 
 import InfiniteMarquee from "../ui/InfiniteMarquee";
+import { useLenisScroll } from "@/hooks/useLenis";
 
 const features = [
   "Custom, high-performance websites",
@@ -26,6 +27,20 @@ const drawbacks = [
 ];
 
 const ComparisionSection = () => {
+  const lenisRef = useLenisScroll();
+
+  const handleNavClick = (e: React.MouseEvent, link: string) => {
+    e.preventDefault();
+
+    const target = document.querySelector(link) as HTMLElement | null;
+    if (target && lenisRef.current) {
+      lenisRef.current.scrollTo(target, { offset: -50 });
+
+      // ✅ Update URL without reloading
+      window.history.pushState(null, "", link);
+    }
+  };
+
   return (
     <section className="relative overflow-hidden bg-white py-[8rem]">
       <div className="absolute top-[-.2rem] right-[10rem]">
@@ -77,7 +92,11 @@ const ComparisionSection = () => {
             </ul>
 
             <div className="w-full">
-              <Button asChild className="w-full">
+              <Button
+                onClick={(e) => handleNavClick(e, "#contact")}
+                asChild
+                className="w-full"
+              >
                 <a href="#contact">
                   <ArrowRight className="size-[1.6rem] -rotate-45 transition-all duration-200 group-hover:rotate-0" />
                   <span>Contact Me</span>

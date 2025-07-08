@@ -5,6 +5,7 @@ import { Button } from "../ui/button";
 import { ArrowRight } from "lucide-react";
 import clsx from "clsx";
 import { useState } from "react";
+import { useLenisScroll } from "@/hooks/useLenis";
 
 const processItems = [
   {
@@ -31,6 +32,20 @@ const processItems = [
 
 const ProcessSection = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+
+  const lenisRef = useLenisScroll();
+
+  const handleNavClick = (e: React.MouseEvent, link: string) => {
+    e.preventDefault();
+
+    const target = document.querySelector(link) as HTMLElement | null;
+    if (target && lenisRef.current) {
+      lenisRef.current.scrollTo(target, { offset: -50 });
+
+      // ✅ Update URL without reloading
+      window.history.pushState(null, "", link);
+    }
+  };
 
   return (
     <section className="py-[6rem]">
@@ -80,7 +95,7 @@ const ProcessSection = () => {
 
                 <div
                   className={clsx(
-                    "flex min-w-full flex-col gap-[2.4rem] transition-all duration-500 lg:min-w-[30rem] xl:min-w-[43.2rem]",
+                    "flex min-w-full flex-col gap-[2.4rem] transition-all duration-500 lg:min-w-[30rem] xl:min-w-[35rem]",
                     isOpen ? "opacity-100" : "opacity-0",
                   )}
                 >
@@ -103,14 +118,11 @@ const ProcessSection = () => {
         </div>
 
         <div className="flex justify-center gap-[1.6rem]">
-          <Button asChild>
-            <a href="#contact">
-              <ArrowRight className="size-[1.6rem] -rotate-45 transition-all duration-200 group-hover:rotate-0" />
-              <span>Contact Me</span>
-            </a>
-          </Button>
-
-          <Button asChild variant="dark">
+          <Button
+            onClick={(e) => handleNavClick(e, "#work")}
+            asChild
+            variant="dark"
+          >
             <a href="#work">
               <span>See Projects</span>{" "}
               <ArrowRight className="size-[1.6rem] transition-all duration-200" />
