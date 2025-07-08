@@ -1,4 +1,4 @@
-import { useLenisScroll } from "@/hooks/useLenis";
+import { Calendar } from "lucide-react";
 import { Button } from "../ui/button";
 
 const social = [
@@ -20,35 +20,21 @@ const experience = [
   {
     field: "Frontend Engineer",
     company: "RadixTech",
-    year: "2024",
+    year: "2024 - Present",
   },
   {
     field: "Fontend Developer",
     company: "Frototype Agency",
-    year: "2024",
+    year: "2024 - 2024",
   },
   {
     field: "Fontend Developer",
     company: "CreativeCycle",
-    year: "2023",
+    year: "2023 - 2024",
   },
 ];
 
 const AboutSection = () => {
-  const lenisRef = useLenisScroll();
-
-  const handleNavClick = (e: React.MouseEvent, link: string) => {
-    e.preventDefault();
-
-    const target = document.querySelector(link) as HTMLElement | null;
-    if (target && lenisRef.current) {
-      lenisRef.current.scrollTo(target, { offset: -50 });
-
-      // ✅ Update URL without reloading
-      window.history.pushState(null, "", link);
-    }
-  };
-
   return (
     <section id="about" className="py-[6rem]">
       <div className="container flex flex-col items-center gap-[4.4rem] md:flex-row">
@@ -98,13 +84,9 @@ const AboutSection = () => {
             </div>
 
             <div className="w-full">
-              <Button
-                onClick={(e) => handleNavClick(e, "#contact")}
-                asChild
-                className="w-full"
-              >
-                <a href="#contact" target="_blank">
-                  Let's Connect
+              <Button asChild className="w-full">
+                <a href="" target="_blank">
+                  Download Resume
                 </a>
               </Button>
             </div>
@@ -157,11 +139,14 @@ const AboutSection = () => {
                 key={idx}
                 className="shadow-04 flex items-center gap-[2rem] rounded-[.8rem] bg-[#efeeea] p-[1.6rem] lg:gap-[4.8rem]"
               >
-                <p className="flex-1">{item.field}</p>
+                <p className="flex flex-1 items-center gap-[1rem] text-left">
+                  <Calendar className="size-[2rem] stroke-[1.5px]" />{" "}
+                  {item.year}
+                </p>
 
                 <p className="flex-1">{item.company}</p>
 
-                <p className="flex-1 text-right">{item.year}</p>
+                <p className="flex-1">{item.field}</p>
               </li>
             ))}
           </ul>

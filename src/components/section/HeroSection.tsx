@@ -1,17 +1,28 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowDown } from "lucide-react";
 import AvailableBadge from "../ui/AvailableBadge";
 import { Button } from "../ui/button";
+import { useLenisScroll } from "@/hooks/useLenis";
 
-const clients = [
-  { src: "/images/abubakar.webp", alt: "Client 1" },
-  { src: "/images/asim.webp", alt: "Client 2" },
-  { src: "/images/client-05.avif", alt: "Client 3" },
-  { src: "/images/client-04.avif", alt: "Client 4" },
-  { src: "/images/chandeep.webp", alt: "Client 5" },
-];
+// const clients = [
+//   { src: "/images/abubakar.webp", alt: "Client 1" },
+//   { src: "/images/asim.webp", alt: "Client 2" },
+//   { src: "/images/client-05.avif", alt: "Client 3" },
+//   { src: "/images/client-04.avif", alt: "Client 4" },
+//   { src: "/images/chandeep.webp", alt: "Client 5" },
+// ];
 
 const HeroSection = () => {
   const HeadingText = "Hi, I’m Taha,\na frontend engineer";
+  const lenisRef = useLenisScroll();
+
+  const handleNavClick = (e: React.MouseEvent, link: string) => {
+    e.preventDefault();
+
+    const target = document.querySelector(link) as HTMLElement | null;
+    if (target && lenisRef.current) {
+      lenisRef.current.scrollTo(target, { offset: -50 });
+    }
+  };
 
   return (
     <section id="home" className="flex min-h-screen items-center">
@@ -36,15 +47,19 @@ const HeroSection = () => {
             experience.
           </p>
 
-          <div className="flex w-full flex-col items-center justify-center gap-[4rem] px-[4rem] md:flex-row">
+          <div className="flex w-full flex-col items-center justify-center gap-[.5rem] px-[4rem] md:flex-row">
             <Button asChild>
               <a href="mailto:connectmtb@gmail.com">
                 <span>Work with me</span>
-                <ArrowRight className="size-[1.6rem] -rotate-45 transition-all duration-200 group-hover:rotate-0" />
               </a>
             </Button>
 
-            <div className="flex items-center gap-[2rem]">
+            <Button variant="dark" onClick={(e) => handleNavClick(e, "#work")}>
+              <span>Scroll Down</span>
+              <ArrowDown className="size-[1.6rem] -rotate-45 transition-all duration-200 group-hover:rotate-0" />
+            </Button>
+
+            {/* <div className="flex items-center gap-[2rem]">
               <ul className="flex items-center">
                 {clients.map((item, idx) => (
                   <li
@@ -77,7 +92,7 @@ const HeroSection = () => {
                   Trusted by 40+ clients
                 </h6>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

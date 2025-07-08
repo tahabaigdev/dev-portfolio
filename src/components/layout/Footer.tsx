@@ -9,9 +9,6 @@ const Footer = () => {
     const target = document.querySelector(link) as HTMLElement | null;
     if (target && lenisRef.current) {
       lenisRef.current.scrollTo(target, { offset: -50 });
-
-      // ✅ Update URL without reloading
-      window.history.pushState(null, "", link);
     }
   };
 
@@ -23,13 +20,12 @@ const Footer = () => {
         </p>
 
         <div className="flex items-center justify-center md:justify-end">
-          <a
-            href="#home"
+          <button
             onClick={(e) => handleNavClick(e, "#home")}
             className="cursor-pointer text-[1.2rem] tracking-[0.7px] uppercase md:text-[1.4rem]"
           >
             Back to top
-          </a>
+          </button>
         </div>
       </div>
     </footer>

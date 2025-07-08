@@ -21,11 +21,11 @@ const ContactSection = () => {
         </h3>
 
         <p className="max-w-[70rem] text-[1.4rem] tracking-[0.7px] md:text-[2.2rem] md:leading-[3rem]">
-          Just email us at{" "}
+          Interested in working together or have a role in mind that fits my
+          skills? Send an email to{" "}
           <a href="mailto:connectmtb@gmail.com" className="underline">
             connectmtb@gmail.com
-          </a>{" "}
-          with any inquiries, and we’ll reply within the next business day.
+          </a>
         </p>
 
         <div>
