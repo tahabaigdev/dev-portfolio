@@ -38,21 +38,6 @@ body {
   padding-inline: 2rem;
 }
 
-.noise {
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  opacity: 0.04;
-  background: url(/images/noise.gif);
-  background-position: 50%;
-  background-size: 40rem;
-  background-attachment: scroll;
-  z-index: 9;
-  filter: contrast(125%) brightness(70%);
-}
-
 .marquee .rfm-marquee-container {
   mask-image: linear-gradient(
     to right,

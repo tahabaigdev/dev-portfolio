@@ -23,12 +23,12 @@ const experience = [
     year: "2024 - Present",
   },
   {
-    field: "Fontend Developer",
+    field: "Frontend Engineer",
     company: "Frototype Agency",
     year: "2024 - 2024",
   },
   {
-    field: "Fontend Developer",
+    field: "Frontend Engineer",
     company: "CreativeCycle",
     year: "2023 - 2024",
   },
@@ -85,7 +85,7 @@ const AboutSection = () => {
 
             <div className="w-full">
               <Button asChild className="w-full">
-                <a href="" target="_blank">
+                <a href="/resume/my-resume.pdf" target="_blank">
                   Download Resume
                 </a>
               </Button>
@@ -95,12 +95,12 @@ const AboutSection = () => {
 
         <div className="flex flex-col gap-[3.2rem] text-[1.4rem] leading-[2.2rem] lg:text-[1.6rem] lg:leading-[2.4rem]">
           <p>
-            With over 2 years of experience in frontend development, I
-            specialize in building fast, responsive web interfaces using React
-            and Next.js. My approach centers on writing clean, maintainable code
-            and creating seamless user experiences. I'm always looking to take
-            on meaningful projects and contribute to high-quality, scalable web
-            solutions.
+            Hi there! I'm Taha, a Frontend Engineer with over 2+ years of
+            experience in this game. I confidently build fast, responsive web
+            interfaces using modern tools and frameworks. I focus on writing
+            clean, maintainable code and delivering smooth, user-friendly
+            experiences. I'm always eager to take on meaningful projects and
+            contribute to high-quality, scalable digital solutions.
           </p>
 
           <hr className="w-full border-[1px] border-dashed border-[#051A2F] opacity-30" />
@@ -116,6 +116,7 @@ const AboutSection = () => {
               "Bootstrap",
               "SASS/SCSS",
               "Styled Components",
+              "Headless UI Libraries",
               "GSAP",
               "Framer Motion",
               "Git/Github",
