@@ -10,6 +10,16 @@ export const projectsData = [
     imageAlt: "NetTax Website",
   },
   {
+    name: "simcoengineparts.com",
+    description:
+      "Website for Simco a trusted heavy machinery engine parts supplier.",
+    tech: ["React", "Typescript", "Tailwind CSS", "Headless UI"],
+    siteUrl: "https://simcoengineparts.com/",
+    githubUrl: "https://github.com/tahabaigdev/nettax",
+    imageSrc: "/images/simco-website.jpg",
+    imageAlt: "Simco Website",
+  },
+  {
     name: "radixtech.org",
     description:
       "Website for RadixTech providing data-driven organizational solutions.",
