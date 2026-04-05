@@ -47,9 +47,9 @@ const AboutSection = () => {
           <div className="flex flex-col items-center gap-[.8rem] text-center">
             <div className="shadow-03 h-[40rem] w-full overflow-hidden rounded-[.8rem] md:h-[28.2rem] md:w-[25.2rem]">
               <img
-                src="/images/my-image.avif"
+                src="/images/taha.jpg"
                 alt="About Image"
-                className="size-full object-cover object-center"
+                className="size-full object-cover object-top"
                 loading="lazy"
               />
             </div>

@@ -20,11 +20,12 @@ const Header = () => {
     <header className="fixed top-0 left-0 z-[100] w-full py-[1.6rem]">
       <div className="container grid grid-cols-2 items-center px-[2rem] md:grid-cols-3">
         <div className="inline-flex">
-          <a
-            href="/"
-            className="text-[1.4rem] leading-[1.8rem] font-semibold uppercase md:text-[1.6rem] md:leading-[2rem]"
-          >
-            Taha Baig&apos;
+          <a href="/">
+            <img
+              src="/images/tb-logo.png"
+              alt="Logo"
+              className="w-[10rem] md:w-[13rem]"
+            />
           </a>
         </div>
 
