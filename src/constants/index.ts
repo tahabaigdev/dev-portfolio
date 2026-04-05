@@ -1,6 +1,6 @@
 export const projectsData = [
   {
-    name: "nettax.org",
+    name: "NetTax",
     description:
       "Website for NetTax a trusted personal and business tax solutions.",
     tech: ["React", "Typescript", "Tailwind CSS", "WordPress CMS"],
@@ -10,7 +10,7 @@ export const projectsData = [
     imageAlt: "NetTax Website",
   },
   {
-    name: "simcoengineparts.com",
+    name: "Simco Engine Parts",
     description:
       "Website for Simco a trusted heavy machinery engine parts supplier.",
     tech: ["React", "Typescript", "Tailwind CSS", "Headless UI"],
@@ -20,7 +20,7 @@ export const projectsData = [
     imageAlt: "Simco Website",
   },
   {
-    name: "radixtech.org",
+    name: "RadixTech",
     description:
       "Website for RadixTech providing data-driven organizational solutions.",
     tech: ["React", "JavaScript", "Tailwind CSS", "WordPress CMS"],
@@ -30,7 +30,7 @@ export const projectsData = [
     imageAlt: "RadixTech Website",
   },
   {
-    name: "frototype.agency",
+    name: "Frototype",
     description:
       "Website for Frototype, providing innovative IT service solutions.",
     tech: ["HTML", "CSS", "JavaScript", "GSAP"],

@@ -12,7 +12,7 @@ import { useLenisScroll } from "@/hooks/useLenis";
 // ];
 
 const HeroSection = () => {
-  const HeadingText = "Hi, I’m Taha,\na frontend developer";
+  const HeadingText = "Hi, I’m Taha,\na frontend engineer";
   const lenisRef = useLenisScroll();
 
   const handleNavClick = (e: React.MouseEvent, link: string) => {
@@ -49,8 +49,11 @@ const HeroSection = () => {
 
           <div className="flex w-full flex-col items-center justify-center gap-[.5rem] px-[4rem] md:flex-row">
             <Button asChild>
-              <a href="mailto:connectmtb@gmail.com">
-                <span>Work with me</span>
+              <a
+                href="/resume/Taha_Baig_Frontend_Engineer_Resume.pdf"
+                target="_blank"
+              >
+                Download Resume
               </a>
             </Button>
 

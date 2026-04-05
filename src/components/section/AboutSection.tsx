@@ -18,18 +18,23 @@ const social = [
 
 const experience = [
   {
-    field: "Frontend Developer",
-    company: "RadixTech",
-    year: "2024 - Present",
+    field: "Frontend Engineer",
+    company: "CreativePixels",
+    year: "2025 - Present",
   },
   {
-    field: "Frontend Developer",
+    field: "Frontend Engineer",
+    company: "RadixTech",
+    year: "2024 - 2025",
+  },
+  {
+    field: "Frontend Engineer",
     company: "Frototype Agency",
     year: "2024 - 2024",
   },
   {
-    field: "Junior Frontend Developer",
-    company: "CreativeCycle",
+    field: "Junior Frontend Engineer",
+    company: "Teqsol",
     year: "2023 - 2024",
   },
 ];
@@ -37,8 +42,8 @@ const experience = [
 const AboutSection = () => {
   return (
     <section id="about" className="py-[6rem]">
-      <div className="container flex flex-col items-center gap-[4.4rem] md:flex-row">
-        <div className="shadow-02 flex w-full flex-col gap-[2.4rem] rounded-[.8rem] bg-white px-[.9rem] pt-[.9rem] pb-[3rem] md:w-auto">
+      <div className="container flex flex-col items-start gap-[4.4rem] md:flex-row">
+        <div className="shadow-02 flex w-full flex-col gap-[2.4rem] rounded-[.8rem] bg-white px-[.9rem] pt-[.9rem] pb-[2rem] md:w-auto">
           <div className="flex flex-col items-center gap-[.8rem] text-center">
             <div className="shadow-03 h-[40rem] w-full overflow-hidden rounded-[.8rem] md:h-[28.2rem] md:w-[25.2rem]">
               <img
@@ -85,7 +90,10 @@ const AboutSection = () => {
 
             <div className="w-full">
               <Button asChild className="w-full">
-                <a href="/resume/resume.pdf" target="_blank">
+                <a
+                  href="/resume/Taha_Baig_Frontend_Engineer_Resume.pdf"
+                  target="_blank"
+                >
                   Download Resume
                 </a>
               </Button>
@@ -95,7 +103,7 @@ const AboutSection = () => {
 
         <div className="flex flex-col gap-[3.2rem] text-[1.4rem] leading-[2.2rem] lg:text-[1.6rem] lg:leading-[2.4rem]">
           <p>
-            Hi there! I'm Taha, a Frontend Developer with nearly 2 years of
+            Hi there! I'm Taha, a Frontend Engineer with nearly 2+ years of
             experience in this game. I confidently build fast, responsive web
             interfaces using modern tools and frameworks. I focus on writing
             clean, maintainable code and delivering smooth, user-friendly
@@ -111,13 +119,10 @@ const AboutSection = () => {
               "CSS",
               "JavaScript",
               "Typescript",
-              "React JS",
-              "Next JS",
+              "React.js",
+              "Next.js",
               "Tailwind CSS",
-              "Bootstrap",
-              "SASS/SCSS",
               "CI/CD automation",
-              "Styled Components",
               "GSAP",
               "Framer Motion",
               "Git/Github",

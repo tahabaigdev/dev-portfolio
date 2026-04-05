@@ -43,9 +43,9 @@ const ProjectSection = () => {
           {projectsData.map((item, idx) => (
             <div
               key={idx}
-              className="flex flex-col-reverse justify-between gap-[4.5rem] lg:flex-row lg:items-center lg:gap-[0rem]"
+              className="flex flex-col-reverse justify-between gap-[4rem] lg:flex-row lg:items-center"
             >
-              <div className="flex flex-1 flex-col md:pr-[5rem]">
+              <div className="flex w-full flex-col lg:w-[30%]">
                 <h3 className="text-[2.8rem] leading-[3rem] font-light tracking-[-1px] md:text-[3.5rem] md:leading-[3.85rem]">
                   {item.name}
                 </h3>
@@ -91,13 +91,13 @@ const ProjectSection = () => {
 
               <a
                 href={item.siteUrl}
-                className="shadow-05 scale3d-hover basis-[100%] overflow-hidden rounded-[.8rem] border border-[#E6E4DF] lg:basis-[65%]"
+                className="shadow-05 scale3d-hover w-full overflow-hidden rounded-[.8rem] border border-[#E6E4DF] lg:w-[65%]"
                 target="_blank"
               >
                 <img
                   src={item.imageSrc}
                   alt={item.imageAlt}
-                  className="size-full object-contain object-center"
+                  className="size-full object-cover object-center"
                   loading="lazy"
                 />
               </a>
