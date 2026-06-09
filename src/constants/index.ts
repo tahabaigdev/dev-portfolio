@@ -3,7 +3,7 @@ export const projectsData = [
     name: "NetTax",
     description:
       "Website for NetTax a trusted personal and business tax solutions.",
-    tech: ["React", "Typescript", "Tailwind CSS", "WordPress CMS"],
+    tech: ["React", "Typescript", "Tailwind CSS", "Headless CMS"],
     siteUrl: "https://www.nettax.org/",
     githubUrl: "https://github.com/tahabaigdev/nettax",
     imageSrc: "/images/nettax-website.jpg",
@@ -19,16 +19,16 @@ export const projectsData = [
     imageSrc: "/images/simco-website.jpg",
     imageAlt: "Simco Website",
   },
-  {
-    name: "RadixTech",
-    description:
-      "Website for RadixTech providing data-driven organizational solutions.",
-    tech: ["React", "JavaScript", "Tailwind CSS", "WordPress CMS"],
-    siteUrl: "https://www.radixtech.org/",
-    githubUrl: "https://github.com/khusroohayat/Radix",
-    imageSrc: "/images/radixtech-website.jpg",
-    imageAlt: "RadixTech Website",
-  },
+  // {
+  //   name: "RadixTech",
+  //   description:
+  //     "Website for RadixTech providing data-driven organizational solutions.",
+  //   tech: ["React", "JavaScript", "Tailwind CSS", "WordPress CMS"],
+  //   siteUrl: "https://www.radixtech.org/",
+  //   githubUrl: "https://github.com/khusroohayat/Radix",
+  //   imageSrc: "/images/radixtech-website.jpg",
+  //   imageAlt: "RadixTech Website",
+  // },
   {
     name: "Frototype",
     description:

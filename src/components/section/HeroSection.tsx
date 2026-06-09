@@ -3,16 +3,8 @@ import AvailableBadge from "../ui/AvailableBadge";
 import { Button } from "../ui/button";
 import { useLenisScroll } from "@/hooks/useLenis";
 
-// const clients = [
-//   { src: "/images/abubakar.webp", alt: "Client 1" },
-//   { src: "/images/asim.webp", alt: "Client 2" },
-//   { src: "/images/client-05.avif", alt: "Client 3" },
-//   { src: "/images/client-04.avif", alt: "Client 4" },
-//   { src: "/images/chandeep.webp", alt: "Client 5" },
-// ];
-
 const HeroSection = () => {
-  const HeadingText = "Hi, I’m Taha,\na frontend engineer";
+  const HeadingText = "Hi, I’m Taha,\na frontend developer";
   const lenisRef = useLenisScroll();
 
   const handleNavClick = (e: React.MouseEvent, link: string) => {
@@ -41,18 +33,15 @@ const HeroSection = () => {
             ))}
           </h1>
 
-          <p className="mt-[2rem] mb-[3rem] text-[1.4rem] font-light opacity-85 md:mt-[3rem] md:mb-[4rem] md:text-[2.2rem] md:leading-[3.3rem] md:tracking-[-0.3px] lg:max-w-[85%]">
+          <p className="mt-[2rem] mb-[3rem] text-[1.4rem] font-light opacity-85 md:mt-[3rem] md:mb-[4rem] md:text-[2.2rem] md:leading-[3.3rem] md:tracking-[-0.3px] lg:max-w-[80%]">
             I build fast, accessible websites and web apps using modern frontend
-            tools—focused on clean code, responsive design, and a seamless user
+            tools focused on clean code, responsive design, and a seamless user
             experience.
           </p>
 
           <div className="flex w-full flex-col items-center justify-center gap-[.5rem] px-[4rem] md:flex-row">
             <Button asChild>
-              <a
-                href="/resume/Taha_Baig_Frontend_Engineer_Resume.pdf"
-                target="_blank"
-              >
+              <a href="/resume/tb-resume.pdf" target="_blank">
                 Download Resume
               </a>
             </Button>

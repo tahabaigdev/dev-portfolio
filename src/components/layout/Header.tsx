@@ -5,10 +5,10 @@ const social = [
     link: "https://www.linkedin.com/in/tahabaigdev",
     icon: "/images/linkedin.svg",
   },
-  {
-    link: "https://github.com/tahabaigdev",
-    icon: "/images/github.svg",
-  },
+  // {
+  //   link: "https://github.com/tahabaigdev",
+  //   icon: "/images/github.svg",
+  // },
   {
     link: "mailto:connectmtb@gmail.com",
     icon: "/images/mail.svg",

@@ -6,10 +6,10 @@ const social = [
     link: "https://www.linkedin.com/in/tahabaigdev",
     icon: "/images/linkedin.svg",
   },
-  {
-    link: "https://github.com/tahabaigdev",
-    icon: "/images/github.svg",
-  },
+  // {
+  //   link: "https://github.com/tahabaigdev",
+  //   icon: "/images/github.svg",
+  // },
   {
     link: "mailto:connectmtb@gmail.com",
     icon: "/images/mail.svg",
@@ -18,22 +18,22 @@ const social = [
 
 const experience = [
   {
-    field: "Frontend Engineer",
+    field: "Frontend Web Developer",
     company: "CreativePixels",
     year: "2025 - Present",
   },
   {
-    field: "Frontend Engineer",
+    field: "Frontend Developer",
     company: "RadixTech",
     year: "2024 - 2025",
   },
   {
-    field: "Frontend Engineer",
+    field: "Frontend Developer",
     company: "Frototype Agency",
     year: "2024 - 2024",
   },
   {
-    field: "Junior Frontend Engineer",
+    field: "Junior Frontend Developer",
     company: "Teqsol",
     year: "2023 - 2024",
   },
@@ -90,10 +90,7 @@ const AboutSection = () => {
 
             <div className="w-full">
               <Button asChild className="w-full">
-                <a
-                  href="/resume/Taha_Baig_Frontend_Engineer_Resume.pdf"
-                  target="_blank"
-                >
+                <a href="/resume/tb-resume.pdf" target="_blank">
                   Download Resume
                 </a>
               </Button>
@@ -103,12 +100,12 @@ const AboutSection = () => {
 
         <div className="flex flex-col gap-[3.2rem] text-[1.4rem] leading-[2.2rem] lg:text-[1.6rem] lg:leading-[2.4rem]">
           <p>
-            Hi there! I'm Taha, a Frontend Engineer with nearly 2+ years of
-            experience in this game. I confidently build fast, responsive web
-            interfaces using modern tools and frameworks. I focus on writing
-            clean, maintainable code and delivering smooth, user-friendly
-            experiences. I'm always eager to take on meaningful projects and
-            contribute to high-quality, scalable digital solutions.
+            Hi there! I'm Taha, a Frontend Developer with 2+ years of experience
+            in this game. I confidently build fast, responsive web interfaces
+            using modern tools and frameworks. I focus on writing clean,
+            maintainable code and delivering smooth, user-friendly experiences.
+            I'm always eager to take on meaningful projects and contribute to
+            high-quality, scalable digital solutions.
           </p>
 
           <hr className="w-full border-[1px] border-dashed border-[#051A2F] opacity-30" />
