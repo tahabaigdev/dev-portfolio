@@ -18,10 +18,10 @@ const App = () => {
   return (
     <>
       <Helmet>
-        <title>Taha Baig | Frontend Engineer | Pakistan</title>
+        <title>Taha Baig | Frontend Developer | Pakistan</title>
         <meta
           name="description"
-          content="I'm Taha Baig, a frontend engineer with over 2 years of hands-on experience..."
+          content="I'm Taha Baig, a frontend developer with over 2+ years of hands-on experience..."
         />
         <meta
           name="keywords"
@@ -30,11 +30,11 @@ const App = () => {
         <meta name="robots" content="index, follow" />
         <meta
           property="og:title"
-          content="Taha Baig | Frontend Engineer | Pakistan"
+          content="Taha Baig | Frontend Developer | Pakistan"
         />
         <meta
           property="og:description"
-          content="Hire a Frontend Engineer who builds modern web experiences"
+          content="Hire a Frontend Developer who builds modern web experiences"
         />
         <meta property="og:url" content="https://www.tahabaig.dev/" />
       </Helmet>
