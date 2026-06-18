@@ -18,17 +18,17 @@ const social = [
 
 const experience = [
   {
-    field: "Frontend Web Developer",
+    field: "Frontend Engineer",
     company: "CreativePixels",
     year: "2025 - Present",
   },
   {
-    field: "Frontend Developer",
+    field: "Frontend Engineer",
     company: "RadixTech",
     year: "2024 - 2025",
   },
   {
-    field: "Frontend Developer",
+    field: "Frontend Engineer",
     company: "Frototype Agency",
     year: "2024 - 2024",
   },
@@ -67,7 +67,7 @@ const AboutSection = () => {
             </h3>
 
             <p className="max-w-[20rem] text-[1.4rem] leading-[2.24rem]">
-              Frontend Developer Based in Pakistan.
+              Frontend Engineer Based in Pakistan.
             </p>
           </div>
 
@@ -100,7 +100,7 @@ const AboutSection = () => {
 
         <div className="flex flex-col gap-[3.2rem] text-[1.4rem] leading-[2.2rem] lg:text-[1.6rem] lg:leading-[2.4rem]">
           <p>
-            Hi there! I'm Taha, a Frontend Developer with 2+ years of experience
+            Hi there! I'm Taha, a Frontend Engineer with 2+ years of experience
             in this game. I confidently build fast, responsive web interfaces
             using modern tools and frameworks. I focus on writing clean,
             maintainable code and delivering smooth, user-friendly experiences.
