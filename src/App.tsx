@@ -18,7 +18,7 @@ const App = () => {
   return (
     <>
       <Helmet>
-        <title>Taha Baig | Frontend Engineer | Pakistan</title>
+        <title>Taha Baig | Frontend Developer | Pakistan</title>
         <meta
           name="description"
           content="I'm Taha Baig, a frontend developer with over 2+ years of hands-on experience..."

@@ -4,7 +4,7 @@ import { Button } from "../ui/button";
 import { useLenisScroll } from "@/hooks/useLenis";
 
 const HeroSection = () => {
-  const HeadingText = "Hi, I’m Taha,\na frontend engineer";
+  const HeadingText = "Hi, I’m Taha,\na frontend developer";
   const lenisRef = useLenisScroll();
 
   const handleNavClick = (e: React.MouseEvent, link: string) => {
