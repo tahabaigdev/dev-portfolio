@@ -24,7 +24,7 @@ const TestimonialSlider = () => {
               <img
                 src={testimonial.image}
                 alt="Testimonial Image"
-                className="size-full object-cover object-center"
+                className="size-full object-cover object-top"
                 loading="lazy"
               />
             </div>

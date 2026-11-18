@@ -90,7 +90,7 @@ const AboutSection = () => {
 
             <div className="w-full">
               <Button asChild className="w-full">
-                <a href="/resume/tb-resume.pdf" target="_blank">
+                <a href="/resume/Taha-Baig-Resume.pdf" target="_blank">
                   Download Resume
                 </a>
               </Button>
@@ -100,12 +100,12 @@ const AboutSection = () => {
 
         <div className="flex flex-col gap-[3.2rem] text-[1.4rem] leading-[2.2rem] lg:text-[1.6rem] lg:leading-[2.4rem]">
           <p>
-            Hi there! I'm Taha, a Frontend Developer with 2+ years of experience
-            in this game. I confidently build fast, responsive web interfaces
-            using modern tools and frameworks. I focus on writing clean,
-            maintainable code and delivering smooth, user-friendly experiences.
-            I'm always eager to take on meaningful projects and contribute to
-            high-quality, scalable digital solutions.
+            Hi, I'm Taha, a Frontend Developer with 3+ years of experience
+            working with design and development agencies. I mainly focus on
+            turning Figma designs into responsive, pixel-accurate websites using
+            JavaScript-based technologies. My work includes building interactive
+            animations, integrating CMS platforms, and handling website
+            performance, maintenance, and deployments.
           </p>
 
           <hr className="w-full border-[1px] border-dashed border-[#051A2F] opacity-30" />
@@ -115,16 +115,23 @@ const AboutSection = () => {
               "HTML",
               "CSS",
               "JavaScript",
-              "Typescript",
+              "TypeScript",
               "React.js",
               "Next.js",
               "Tailwind CSS",
-              "CI/CD automation",
+              "Sass/SCSS",
+              "Bootstrap",
               "GSAP",
               "Framer Motion",
-              "Git/Github",
+              "Sanity CMS",
+              "Strapi CMS",
+              "WordPress REST API",
+              "Git/GitHub",
               "Figma",
-              "Adobe Photoshop",
+              "Vercel",
+              "Netlify",
+              "Hostinger",
+              "CI/CD Automation",
             ].map((item, idx) => (
               <li
                 key={idx}

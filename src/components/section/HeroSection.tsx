@@ -34,14 +34,14 @@ const HeroSection = () => {
           </h1>
 
           <p className="mt-[2rem] mb-[3rem] text-[1.4rem] font-light opacity-85 md:mt-[3rem] md:mb-[4rem] md:text-[2.2rem] md:leading-[3.3rem] md:tracking-[-0.3px] lg:max-w-[80%]">
-            I build optimized, accessible websites and web apps using modern
-            frontend tools focused on clean code, responsive design, and a
-            seamless user experience.
+            I build responsive, pixel-accurate websites using React, Next.js,
+            and JavaScript, turning designs into smooth, interactive web
+            experiences.
           </p>
 
           <div className="flex w-full flex-col items-center justify-center gap-[.5rem] px-[4rem] md:flex-row">
             <Button asChild>
-              <a href="/resume/tb-resume.pdf" target="_blank">
+              <a href="/resume/Taha-Baig-Resume.pdf" target="_blank">
                 Download Resume
               </a>
             </Button>

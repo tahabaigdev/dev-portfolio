@@ -67,7 +67,7 @@ const ProjectSection = () => {
 
                 <div className="flex items-center gap-[2rem]">
                   <Button asChild className="hover:opacity-90">
-                    <a href={item.siteUrl}>
+                    <a target="_blank" href={item.siteUrl}>
                       <span>Visit Site</span>
 
                       <ArrowRight className="size-[1.4rem]" />

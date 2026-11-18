@@ -19,24 +19,32 @@ const App = () => {
     <>
       <Helmet>
         <title>Taha Baig | Frontend Developer | Pakistan</title>
+
         <meta
           name="description"
-          content="I'm Taha Baig, a frontend developer with over 2+ years of hands-on experience..."
+          content="Taha Baig is a frontend developer with 3+ years of experience building responsive, pixel-accurate websites using React, Next.js, and JavaScript."
         />
-        <meta
-          name="keywords"
-          content="Frontend Developer, Freelance Developer, ReactJs, NextJs, TypeScript, Taha Baig"
-        />
+
         <meta name="robots" content="index, follow" />
-        <meta
-          property="og:title"
-          content="Taha Baig | Frontend Developer | Pakistan"
-        />
+
+        <link rel="canonical" href="https://www.tahabaig.dev/" />
+
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Taha Baig | Frontend Developer" />
         <meta
           property="og:description"
-          content="Hire a Frontend Developer who builds modern web experiences"
+          content="Explore my frontend projects, built with React, Next.js, and JavaScript, with a focus on responsive and pixel-accurate interfaces."
         />
         <meta property="og:url" content="https://www.tahabaig.dev/" />
+
+        {/* Twitter / X */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Taha Baig | Frontend Developer" />
+        <meta
+          name="twitter:description"
+          content="Frontend developer building responsive, pixel-accurate websites with React, Next.js, and JavaScript."
+        />
       </Helmet>
 
       {isLoading && <Loader onComplete={handleLoaderComplete} />}
